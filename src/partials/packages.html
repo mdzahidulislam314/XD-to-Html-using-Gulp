@@ -1,0 +1,30 @@
+<section class="p-heading border-bottom bg-white py-3">
+  <div class="container">
+    <h1 class="sm-title font-weight-bold m-0">Packages</h1>
+  </div>
+</section>
+
+<div class="module-body pt-3 mt-1 mb-5">
+  <div class="container">
+    {{> package-card-one}} 
+    {{> package-card-two}}
+    {{> package-card-one}} 
+    <nav class="mt-40">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" tabindex="-1"
+            ><img src="{{root}}assets/img/icons/left.svg" alt="logo"
+          /></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#"
+            ><img src="{{root}}assets/img/icons/right.svg" alt="logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

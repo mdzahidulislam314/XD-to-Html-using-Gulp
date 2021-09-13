@@ -1,0 +1,8 @@
+.footer-section {
+    background: $cm-color;
+    padding: 40px 0;
+}
+
+.cp-text {
+    @include border-top-p-map($cp-text-border-top);
+}

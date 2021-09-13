@@ -1,0 +1,273 @@
+<div class="dashboard">
+  <div class="bg-white">
+    <div class="container pt-3">
+      <div class="notification">
+      {{> dashboard-notification}}
+       {{> dashboard-notification}}
+       
+      <div class="mt-3">
+        <span class="cursor-pointer">Show all notifications (5)</span>
+      </div>
+      </div>
+
+      <div
+        class="
+          d-flex
+          align-items-center
+          justify-content-between
+          pb-3
+          border-bottom
+          pt-4
+        "
+      >
+        <div class="sm-title">Personal dashboard</div>
+        <label class="ctm-container">
+          Main Page
+          <input type="checkbox" checked />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      {{> dashboard-latest-search}}
+      
+    </div>
+  </div>
+  {{> search-form  formVisble ='' filterBtnText
+  = "Expand filter"}}
+
+  <div class="module-body pt-3 mt-1 pb-5 mb-2">
+    <div class="container px-0 px-md-3 pb-3">
+        <div class="card mb-4">
+        <div class="card-header rounded-0 m-border-0 bg-white p-3 d-flex align-items-center justify-content-center justify-content-md-between">
+            <span>
+                <img
+                class="mr-2"
+                src="{{root}}assets/img/icons/alert.svg"
+                alt="icon"
+              />
+              New BUY NOW auction started (5)</span>
+            
+          <img
+          class="ml-2 d-none d-md-inline-block"
+          src="{{root}}assets/img/icons/close-b.svg"
+          alt="icon"
+        />
+        </div>
+        <div class="card-body pb-3 pt-0 pt-md-3 px-5 position-relative">
+            <div class="swiper-container d-new-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">{{> dashboard-card addClass = "gray-card"}}</div>
+                    <div class="swiper-slide">{{> dashboard-card addClass = "gray-card"}}</div>
+                    <div class="swiper-slide">{{> dashboard-card addClass = "gray-card"}}</div>
+                    <div class="swiper-slide">{{> dashboard-card addClass = "gray-card"}}</div>
+                </div>
+            </div>
+            <div class="swiper-button-next ctm-next d1-next">
+                <img
+                class=""
+                src="{{root}}assets/img/icons/right.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="swiper-button-prev ctm-prev d1-prev">
+                <img
+                class=""
+                src="{{root}}assets/img/icons/left.svg"
+                alt="icon"
+              />
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="sm-title pb-3 border-bottom mb-4">Auto auctions</div>
+
+      <div class="mod-row row">
+        <div class="mod-col col-12 col-md-3">
+          <div class="form-group mb-3">
+            <label class="d-block text-nowrap sm-text">Country</label>
+            <select class="form-control">
+              <option value="1">Prancūzija, Belgi…</option>
+              <option value="1">Prancūzija, Belgi…</option>
+              <option value="1">Prancūzija, Belgi…</option>
+            </select>
+          </div>
+        </div>
+        <div class="mod-col col-12 col-md-3">
+          <div class="form-group mb-3">
+            <label class="d-block text-nowrap sm-text">Seller</label>
+            <select class="form-control">
+              <option value="1">All</option>
+              <option value="1">All</option>
+              <option value="1">All</option>
+            </select>
+          </div>
+        </div>
+        <div class="mod-col col-12 col-md-3">
+          <div class="form-group mb-3">
+            <label class="d-block text-nowrap sm-text">Auction type</label>
+            <select class="form-control">
+              <option value="1">All auctions</option>
+              <option value="1">All auctions</option>
+              <option value="1">All auctions</option>
+            </select>
+          </div>
+        </div>
+        <div class="mod-col col-12 col-md-3">
+          <div class="form-group mb-3">
+            <label class="d-none d-md-block text-nowrap sm-text invisible">Country</label>
+            <div class="d-inline-flex align-items-center" style="height: 40px">
+              <label class="ctm-container">
+                Show packages
+                <input type="checkbox" checked />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container px-0 px-md-3">
+        <div class="position-relative dashboard-slider">
+              <div class="swiper-container d-slider border rounded bg-white">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card border-0 rounded-0 h-100">
+                        <div class="card-header rounded-0 bg-white px-5 px-md-3 py-3 mx-3 mx-md-0">
+                          <div class="d-flex align-items-center">
+                            <div class="w-100">
+                              <div class="mb-2">Ends today (3)</div>
+                              <div>2020-01-20</div>
+                            </div>
+                            <input
+                              type="number"
+                              class="form-control radius-20"
+                              placeholder="Time"
+                              style="width: 72px; height: 31px"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-body p-3 h-100">
+                            {{> dashboard-card addClass = "danger-card"}}
+                            {{> dashboard-card addClass = "success-card"}}
+                            {{> dashboard-card addClass = "primary-card"}}
+                            {{> dashboard-card addClass = ""}}
+                            {{> dashboard-card addClass = ""}}
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0 rounded-0 h-100">
+                        <div class="card-header rounded-0 bg-white px-5 px-md-3 py-3 mx-3 mx-md-0">
+                          <div class="d-flex align-items-center">
+                            <div class="w-100">
+                              <div class="mb-2">Ends today (3)</div>
+                              <div>2020-01-21</div>
+                            </div>
+                            <input
+                              type="number"
+                              class="form-control radius-20"
+                              placeholder="Time"
+                              style="width: 72px; height: 31px"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-body p-3 h-100">
+                            {{> dashboard-card addClass = "border-left-color-orange less-card"}}
+                            {{> dashboard-card addClass = "danger-card"}}
+                            {{> dashboard-card addClass = "hot-card"}}
+                            {{> dashboard-card addClass = "gray-card"}}
+                            {{> dashboard-card addClass = "gray-card border-left-color-violet"}}
+
+                             <!-- when dashboard will be empty -->
+              <div class="d-none h-100">
+              <div
+              class="
+                empty-text
+                d-flex
+                align-items-center
+                justify-content-center
+                h-100
+              "
+            >
+              <div class="text-center">
+                <div class="mb-3 pb-1">You need to set search options</div>
+                <button class="btn ctm-btn yellow-btn">START SEARCH</button>
+              </div>
+            </div>
+        </div>
+            <!-- when dashboard will be empty -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0 rounded-0 h-100">
+                        <div class="card-header rounded-0 bg-white px-5 px-md-3 py-3 mx-3 mx-md-0">
+                          <div class="d-flex align-items-center">
+                            <div class="w-100">
+                              <div class="mb-2">Ends today (3)</div>
+                              <div>2020-01-22</div>
+                            </div>
+                            <input
+                              type="number"
+                              class="form-control radius-20"
+                              placeholder="Time"
+                              style="width: 72px; height: 31px"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-body p-3 h-100">
+                            {{> dashboard-card addClass = "gray-card border-left-color-orange less-card"}}
+                            {{> dashboard-card addClass = "gray-card"}}
+                            {{> dashboard-card addClass = "gray-card"}}
+                            {{> dashboard-card addClass = "gray-card"}}
+                            {{> dashboard-card addClass = "gray-card"}}
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0 rounded-0 h-100">
+                        <div class="card-header rounded-0 bg-white px-5 px-md-3 py-3 mx-3 mx-md-0">
+                          <div class="d-flex align-items-center">
+                            <div class="w-100">
+                              <div class="mb-2">Ends today (3)</div>
+                              <div>2020-01-23</div>
+                            </div>
+                            <input
+                              type="number"
+                              class="form-control radius-20"
+                              placeholder="Time"
+                              style="width: 72px; height: 31px"
+                            />
+                          </div>
+                        </div>
+                        <div class="card-body p-3 h-100">
+                            {{> dashboard-card addClass = "success-card"}}
+                            {{> dashboard-card addClass = ""}}
+                            {{> dashboard-card addClass = "primary-card"}}
+                            {{> dashboard-card addClass = ""}}
+                            {{> dashboard-card addClass = "danger-card"}}
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="swiper-button-next ctm-next d-next">
+                <img
+                class=""
+                src="{{root}}assets/img/icons/right.svg"
+                alt="icon"
+              />
+            </div>
+            <div class="swiper-button-prev ctm-prev d-prev">
+                <img
+                class=""
+                src="{{root}}assets/img/icons/left.svg"
+                alt="icon"
+              />
+            </div>
+          </div>
+    </div>
+  </div>
+</div>

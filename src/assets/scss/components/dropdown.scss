@@ -1,0 +1,26 @@
+.mobile-menu {
+    width: 100%;
+    top: 64px;
+    color: $cm-color;
+    position: absolute;
+    left: 0;
+    z-index: 99;
+  }
+.m-lan-box {
+    .lan-box {
+        min-width: max-content;
+        background: $cm-color;
+        width: 100%;
+        top: 29px !important;
+        transform: unset !important;
+    }
+    .dropdown-item {
+        padding: 8px;
+        border-bottom: 1px solid $color12;
+        background: $cm-color;
+        color: #fff;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

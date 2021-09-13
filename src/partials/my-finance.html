@@ -1,0 +1,124 @@
+<section class="module-body pb-4">
+  <section>
+    <div class="container">
+      <h1 class="sm-title font-weight-bold m-0 py-4">My finances</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="finances-details">
+            <div class="mb-2">Balance at the beginning of the period 2020-03-29: <strong class="ml-2">€ 0.00</strong></div>
+            <div class="mb-4">Deposit: <strong class="ml-2">€ 0.00</strong></div>
+            <div class="mb-2 pb-1">Period 2020-03-29 - 2021-03-29</div>
+            <div class="card b-car-list border-0">
+              <div class="card-header black-bg text-white b-car-head d-none d-md-block font-size-12 rounded py-3 mb-2">
+                <div class="row mod-row">
+                  <div class="col-md-12 mod-col">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span class="b-car-dt">Purchases</span>
+                      <span class="b-car-dt  text-center">Interest on late payments</span>
+                      <span class="b-car-dt  text-center">Paid</span>
+                      <span class="b-car-dt  text-center">Not paid</span>
+                      <span class="b-car-dt text-center">Of these, it is late</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0 b-car-data">
+                <div class="row py-md-3 mx-0">
+                  <hr class="mt-0 mb-3 d-block d-md-none w-100" />
+                  <div class="col-md-12 my-auto normal-md-title px-0 px-md-3">
+                    <div class="row mod-row align-items-md-center">
+                      <div class="d-flex col-12 mod-col col-d5 mb-md-0 mb-3">
+                        <div class="w-50 d-block d-md-none">
+                          Purchases
+                        </div>
+                        <div class="m-w-50">€ 0.00</div>
+                      </div>
+                      <div class="d-flex col-12 mod-col col-d5 mb-md-0 mb-3 justify-content-start justify-content-md-center">
+                        <div class="w-50 d-block d-md-none">
+                          Interest on late payments
+                        </div>
+                        <div class="m-w-50">€ 0.00</div>
+                      </div>
+                      <div class="d-flex col-12 mod-col col-d5 mb-md-0 mb-3 justify-content-start justify-content-md-center">
+                        <div class="w-50 d-block d-md-none">Paid</div>
+                        <div class="m-w-50 text-success">€ 0.00</div>
+                      </div>
+                      <div class="d-flex col-12 mod-col col-d5 mb-md-0 mb-3 justify-content-start justify-content-md-center">
+                        <div class="w-50 d-block d-md-none">
+                          Not paid
+                        </div>
+                        <div class="m-w-50 text-danger">€ 0.00</div>
+                      </div>
+                      <div class="d-flex col-12 mod-col col-d5 mb-md-0 mb-3 justify-content-start justify-content-md-center">
+                        <div class="w-50 d-block d-md-none">Of these, it is late</div>
+                        <div class="m-w-50 text-danger">€ 0.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mt-0 mb-0" />
+              </div>
+            </div>
+            <hr class="mt-0 mb-3 w-100" />
+            <div class="mb-2">Balance at the end of the period: <strong class="ml-2 text-danger">€ 0.00</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="mb-4 mt-2">
+    <div class="container">
+      <h1 class="sm-title font-weight-bold m-0 py-3">
+        <a href="/my-finance-inner.html">Detailed information</a>
+      </h1>
+      <div class="card tab-area b-car-list">
+        <div class="card-body p-md-3 p-0">
+          <nav class="cus-tabs-module mb-3">
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <a class="nav-link active md-text font-weight-bold" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Incomplete payments</a>
+              <a class="nav-link md-text font-weight-bold" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">12 months period</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="finances-details">
+                <div class="card b-car-list border-0">
+                  <div class="card-header black-bg text-white b-car-head d-none d-md-block font-size-12 rounded py-3 mb-2">
+                    <div class="row mod-row">
+                      <div class="col-md-4 mod-col my-auto"><span>Vehicle</span></div>
+                      <div class="col-md-8 mod-col">
+                        <div class="row mod-row align-items-center">
+                          <div class="col-12 mod-col col-d5">Purchase date</div>
+                          <div class="col-12 mod-col col-d5">Payment term</div>
+                          <div class="col-12 mod-col col-d5">Amount</div>
+                          <div class="col-12 mod-col col-d5">Total debt</div>
+                          <div class="col-12 mod-col col-d5">Document</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body p-0 b-car-data">
+                    <!-- single list -->
+                    {{> finance-list-item-one}}
+                    <!-- single list -->
+                    {{> finance-list-item-two}}
+                    <!-- single list -->
+                    {{> finance-list-item-one}}
+                    <!-- single list -->
+                    {{> finance-list-item-one}}
+                    <!-- single list -->
+                    {{> finance-list-item-one}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>

@@ -1,0 +1,121 @@
+@import "_mixins";
+.item {
+  height: 350px;
+  .item-text-all {
+    bottom: 18px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    z-index: 9;
+    width: 700px;
+    .x-sm-text {
+      @include font-size-p-map($item-x-sm-text-font-size);
+    }
+    .lg-title {
+      @include font-size-p-map($item-lg-title-font-size);
+    }
+  }
+}
+
+.module-pkg {
+  .module-pkg-left {
+    padding: 20px;
+    color: $white;
+  }
+  .module-pkg-right {
+    padding: 20px;
+  }
+}
+
+.less-item {
+  .orginal-c {
+    display: none;
+  }
+  .less-plan-c {
+    display: block;
+  }
+}
+.orginal-item {
+  .orginal-c {
+    display: block;
+  }
+  .less-plan-c {
+    display: none;
+  }
+}
+.card {
+    &.mod-card {
+      border-radius: 5px;
+      border-color: $color2;
+      .card-header {
+        background: $color4;
+        border-color: $color2;
+        .ac-head-item {
+          height: 35px;
+        }
+      }
+      .ac-head-item {
+        padding: 0 18px;
+        border-right: 1px solid $color2;
+        .ac-inner {
+          margin-right: 10px;
+          .car-img {
+            height: 11px;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        &:last-child {
+          border-right: none;
+        }
+      }
+      .card-body {
+        padding: 15px;
+      }
+    }
+  }
+.ac-list-item {
+  margin-bottom: 20px;
+  .ac-list-left {
+    .ac-head-item {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.page-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  .page-link {
+    padding: 0;
+    line-height: normal;
+    color: $cm-color;
+    background-color: transparent;
+    border: none;
+  }
+  &:last-child,
+  &:first-child {
+    background: $white;
+    border-radius: 5px;
+    padding: 0;
+    .page-link {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &:first-child {
+    margin-right: 14px;
+  }
+  &:last-child {
+    margin-left: 14px;
+  }
+}

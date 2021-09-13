@@ -1,0 +1,233 @@
+
+        <div class="card mb-3 mb-md-0 md-border list-item">
+            <div class="card-body py-md-2 px-md-0 px-3 font-size-12 border-bottom">
+              <div class="row mod-row">
+                <div class="col-md-3 mod-col mb-md-0 mb-3">
+                  <div class="py-2">
+                    <span class="mr-2"
+                      ><img
+                        src="assets/img/icons/pt-flug.svg"
+                        width="20"
+                        height="14"
+                        alt="icon"
+                    /></span>
+                    <span class="font-weight-bold">Package ID: 125 (8)</span>
+                  </div>
+                  <hr class="mt-2 mb-2 d-block d-md-none w-100" />
+                  <div class="pk-list-item py-2">
+                    <div class="list-scroll">
+                      <table
+                        class="
+                          table table-borderless
+                          pk-table-res
+                          table-striped table-light
+                          font-size-10
+                        "
+                      >
+                        <tbody class="broker-car-table">
+                          <tr onclick="brokerCarinfo(event,1)" class="car-ac">
+                            <th scope="row">1</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr onclick="brokerCarinfo(event,2)" class="car-ac">
+                            <th scope="row">2</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr class="car-ac" onclick="brokerCarinfo(event,3)">
+                            <th scope="row">3</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr class="car-ac" onclick="brokerCarinfo(event,4)">
+                            <th scope="row">4</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr class="car-ac">
+                            <th scope="row">5</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr class="car-ac">
+                            <th scope="row">6</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                          <tr class="car-ac">
+                            <th scope="row">7</th>
+                            <td>Volvo V60</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9 mod-col my-auto">
+                  <div
+                    class="
+                      font-size-10
+                      row
+                      align-items-md-center
+                    "
+                  >
+                    <!-- use for desktop -->
+                    <div class="col-12 col-d8 mb-md-0 mb-3 d-none d-md-flex">
+                      <div class="d-block d-md-none w-50">Winning date</div>
+                      <div class="">2021-01-11</div>
+                    </div>
+                    <div class="col-12 col-d8 mb-md-0 mb-3 d-none d-md-flex">
+                      <div class="w-50 d-block d-md-none">
+                        Amount,Paid, Debt (€)
+                      </div>
+                      <div class="d-md-block d-flex">
+                        <div class="mr-1 mb-1">6,309.00</div>
+                        <div class="mr-1 mb-1 text-success">0.00</div>
+                        <div class="mr-1 mb-1 text-danger">6,309.00</div>
+                      </div>
+                    </div>
+                    <hr class="mt-0 mb-3 d-block d-md-none w-100 mx-3" />
+                    <div class="col-9 d-none d-md-block">
+                      <div class="list-scroll" style="overflow-x: hidden;">
+                        <table
+                          class="
+                            table table-borderless
+                            pk-table-res
+                            table-striped
+                           mb-0
+                          "
+                        >
+                          <tbody>
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            {{> confirm-tr-list}}
+                            <!-- <tr>
+                              <td>
+                                <div>Transported</div>
+                                2020-12-17
+                              </td>
+                              <td class="text-success">Yes</td>
+                              <td class="text-danger">Not ordered</td>
+                              <td>Not ready</td>
+                              <td>No pick up</td>
+                              <td>Lorem ips</td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- use for desktop -->
+                  </div>
+                  
+
+                    <!-- reuse for mobile -->
+                    <div class="d-block d-md-none sm-text">
+                      <div
+                        class="b-mcar-info"
+                        id="bcarInfo-1"
+                        style="display: block"
+                      >
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="d-block d-md-none w-50">Winning date 1</div>
+                          <div class="m-w-50">2021-01-11</div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Amount,Paid, Debt (€)</div>
+                          <div class="d-md-block d-flex m-w-50">
+                            <div class="mr-1">6,309.00</div>
+                            <div class="mr-1 text-success">0.00</div>
+                            <div class="mr-1 text-danger">6,309.00</div>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Transportation</div>
+                          <div class="text-success m-w-50">
+                            <span>Transported 2020-12-17</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="text-success m-w-50">
+                            <span>Yes</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="text-danger m-w-50">
+                            <span>Not ordered</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-mcar-info" id="bcarInfo-2">
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="d-block d-md-none w-50">Winning date 2</div>
+                          <div class="m-w-50">2021-01-11</div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Amount,Paid, Debt (€)</div>
+                          <div class="d-md-block d-flex m-w-50">
+                            <div class="mr-1">6,309.00</div>
+                            <div class="mr-1 text-success">0.00</div>
+                            <div class="mr-1 text-danger">6,309.00</div>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Transportation</div>
+                          <div class="text-success m-w-50">
+                            <span>Transported 2020-12-17</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="text-success m-w-50">
+                            <span>Yes</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="text-danger m-w-50">
+                            <span>Not ordered</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                        <div class="d-flex b-car-dt sm-w-100 mb-md-0 mb-3">
+                          <div class="w-50">Technical passport</div>
+                          <div class="m-w-50">
+                            <span>Not ready</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- reuse for mobile -->
+                </div>
+              </div>
+            </div>
+          </div>

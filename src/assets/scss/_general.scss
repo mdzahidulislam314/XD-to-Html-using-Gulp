@@ -1,0 +1,350 @@
+.md-w-100 {
+  @include width-p-map($md-w-100);
+}
+.border-left-3 {
+  border-left: 3px solid $color10 !important;
+}
+.position-inherit {
+  position: inherit;
+}
+.h-20 {
+  height: 20px !important;
+}
+.h-40 {
+  height: 40px !important;
+}
+.line-height {
+  line-height: 1.7;
+}
+.my-20 {
+  margin: 20px 0;
+}
+.h-30 {
+  height: 30px !important;
+}
+.w-30 {
+  width: 30px !important;
+}
+.right-0 {
+  right: 0;
+}
+.vv-sm-text {
+  font-size: 10px;
+}
+
+.p-15 {
+  padding: 15px !important;
+}
+/* === Scrollbar CSS === */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #c3c3c3 #f5f5f5;
+}
+*::-webkit-scrollbar {
+  width: 11px;
+}
+*::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #c3c3c3;
+  border-radius: 8px;
+}
+/* === End === */
+
+.bg-3 {
+  background-color: $color14 !important;
+}
+.bg-4 {
+  background-color: $color15 !important;
+}
+// new
+.m-border-bottom-c {
+  @include border-bottom-p-map($m-border-bottom-c);
+}
+.border-right-g {
+  border-right: 1px solid $color2;
+}
+.border-v {
+  border: 1px solid $color10;
+}
+.bg-violet {
+  background: $color10 !important;
+}
+.border-c {
+  border: 1px solid $color9;
+}
+
+.border-right-c {
+  border-right: 1px solid $color9;
+}
+
+.border-bottom-c {
+  border-bottom: 1px solid $color9;
+}
+
+.border-top-c {
+  border-top: 1px solid $color9;
+}
+
+.border-left-c {
+  border-left: 1px solid $color9;
+}
+.text-underline {
+  text-decoration: underline !important;
+}
+.table {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 980px;
+  }
+}
+.main-tlt {
+  @include font-size-p-map($main-tlt-font-size);
+  margin-bottom: 35px;
+}
+.normal-md-title{
+  @include font-size-map($normal-title-font-size);
+}
+.lg-title {
+  font-size: 46px;
+}
+
+.md-title {
+  @include font-size-p-map($md-title-font-size);
+}
+
+.x-md-title {
+  @include font-size-p-map($x-md-title-font-size);
+}
+
+.font-weight-7,
+.lg-title {
+  font-weight: 700;
+}
+
+.sm-title {
+  font-size: 22px;
+}
+.sm-md-title {
+  @include font-size-map($gray-lg-text-font-size);
+}
+
+.x-sm-text-g {
+  color: $color8;
+}
+
+.lg-text {
+  font-size: 18px;
+}
+
+.md-text {
+  font-size: 16px;
+}
+
+.x-sm-text-g,
+.x-sm-text {
+  font-size: 13px;
+}
+
+.sm-text {
+  font-size: 12px !important;
+}
+
+.v-sm-text {
+  font-size: 11px;
+}
+
+.black-bg {
+  background: $cm-color !important;
+}
+
+.black-color {
+  color: $black-bg !important;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-silver {
+  background: $color4;
+}
+
+.color-white {
+  color: $white !important;
+}
+
+.color-green {
+  color: $green !important;
+}
+
+.color-silver {
+  color: $color2;
+}
+
+.color-red {
+  color: $color5;
+}
+
+.color-blue {
+  color: $blue;
+}
+
+.color-yellow {
+  color: $color1;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.radius-20 {
+  border-radius: 20px !important;
+}
+
+.w-150 {
+  width: 150px;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.auto-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wh-auto {
+  width: auto !important;
+  height: auto !important;
+}
+
+.radius-50 {
+  border-radius: 50px !important;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scale-hover {
+  transform: scale(1);
+  transition: ease 0.9s;
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+// default
+.mr-35 {
+  margin-right: 35px;
+}
+.w-120 {
+  min-width: 120px !important;
+}
+.b-color {
+  border-color: $color17 !important;
+}
+.b-color-2 {
+  border-color: $color19 !important;
+}
+.bg-5 {
+  background-color: $color16 !important;
+}
+.bg-6 {
+  background-color: $color18 !important;
+}
+.bg-7 {
+  background-color: $color3 !important;
+}
+.bg-white-m {
+  @include background-p-map($bg-white-m);
+}
+.md-border {
+  @include border-p-map($md-border);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+a {
+  color: $cm-color;
+}
+
+.m-padding-0 {
+  @include padding-p-map($m-zero);
+}
+.m-margin-0 {
+  @include margin-p-map($m-zero);
+}
+.m-border-0 {
+  @include border-p-map($m-zero);
+}
+.m-w-100 {
+  @include width-p-map($m-w-100);
+}
+.m-w-50 {
+  @include width-p-map($m-w-50);
+}
+.l-w-100 {
+  @include width-p-map($l-w-100);
+}
+.sm-w-100 {
+  @include width-p-map($m-w-100);
+}
+
+.pt-md-60 {
+  @include padding-top-p-map($pt-md-60-padding-top);
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.color-gray {
+  color: $color8;
+}
+
+.font-size-10 {
+  font-size: 10px !important;
+}
+.font-size-15 {
+  font-size: 15px !important;
+}
+.font-s-8 {
+  font-size: 8px !important;
+}
+.ptb-13{
+  padding-top: 13px;
+  padding-bottom: 13px;
+}

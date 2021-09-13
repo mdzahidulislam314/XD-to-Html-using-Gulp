@@ -1,0 +1,131 @@
+@import './mixins';
+.dash-table {
+  tr {
+    td {
+      border-color: $color2;
+    }
+    &:first-child {
+      td {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.default-card {
+  border-left-width: 5px;
+  .btn {
+    background: $color4;
+  }
+  .hot-b,
+  .less-p {
+    display: none;
+  }
+  &.danger-card,
+  &.success-card,
+  &.primary-card {
+    .btn {
+      background: $color1;
+    }
+  }
+  &.danger-card {
+    .card-header {
+      background: $danger;
+    }
+    .card-body {
+      background: $danger-1;
+    }
+  }
+  &.success-card {
+    .card-header {
+      background: $success;
+    }
+    .card-body {
+      background: $success-1;
+    }
+  }
+  &.primary-card {
+    .card-header {
+      background: $primary;
+    }
+    .card-body {
+      background: $primary-1;
+    }
+  }
+  &.gray-card {
+    .card-header {
+      background: $color3;
+    }
+    .card-body {
+      background: $color3;
+    }
+  }
+  &.hot-card {
+    .hot-b {
+      display: block;
+    }
+    .time {
+      display: none;
+    }
+  }
+  &.less-card {
+    .less-p {
+      display: block;
+    }
+    .dl-name {
+      display: none;
+    }
+  }
+  &.border-left-color-orange {
+    border-left-color: $orange;
+  }
+  &.border-left-color-violet {
+    border-left-color: $color10;
+  }
+}
+.dashboard-slider {
+  .swiper-wrapper {
+    min-height: 400px;
+  }
+  .swiper-slide {
+    border-right: 1px dashed $color2;
+  }
+  .swiper-container {
+    &:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: 9;
+      background: $white;
+    }
+  }
+  .ctm-next,
+  .ctm-prev {
+    background: $white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    top: -35px;
+    @include top-p-map($dash-ctm-next-prev-top);
+    border: 1px solid $color2;
+  }
+  .ctm-prev {
+    @include border-radius-p-map($dash-ctm-prev-border-radius);
+    @include right-p-map($dash-ctm-prev-right);
+    @include left-p-map($dash-ctm-prev-left);
+    @include border-width-p-map($dash-ctm-prev-border-width);
+  }
+  .ctm-next {
+    @include border-radius-p-map($dash-ctm-next-border-radius);
+    @include right-p-map($dash-ctm-next-right);
+  }
+}
+.ctm-next,
+  .ctm-prev {
+    &:after {
+      display: none;
+    }
+  }

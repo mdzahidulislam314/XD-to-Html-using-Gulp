@@ -1,0 +1,102 @@
+.ctm-select {
+    position: relative;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    .ctm-select-txt {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        top: 2px;
+    }
+    .select-txt {
+        display: inherit;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .select-icon {
+        margin-right: 10px;
+        img {
+            width: 20px;
+            height: 14px;
+        }
+    }
+    .select-arr {
+        margin-left: 10px;
+    }
+}
+
+.form-control {
+    border-color: $color6;
+    padding: 0 8px;
+    height: 40px;
+    font-size: 14px;
+    &:focus {
+        box-shadow: none;
+        border-color: $color6;
+    }
+}
+
+.input-append {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+textarea {
+    resize: none;
+}
+
+/* The ctm-container */
+
+.ctm-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .checkmark {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        height: 16px;
+        width: 16px;
+        border: 1px solid $color2;
+        background-color: $white;
+        border-radius: 3px;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 0px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked~.checkmark {
+            background-color: $cm-color;
+            border-color: $cm-color;
+        }
+        &:checked~.checkmark:after {
+            display: block;
+        }
+    }
+}

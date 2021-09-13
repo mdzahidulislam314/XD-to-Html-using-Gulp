@@ -1,0 +1,36 @@
+@import './mixins';
+  .list-scroll {
+    overflow-y: auto;
+    height: 180px;
+    .cl-list{
+      @include font-size-map($normal-title-font-size);
+    }
+    .pk-inner-lhover{
+      tr{
+        &:hover{
+          background: $color1;
+        }
+        &.active{
+          background: $color1;
+        }
+      }
+    }
+  }
+.pk-slider-wrap {
+  .mySwiper {
+    .swiper-slide-thumb-active {
+      img{
+        border: 3px solid $color1;
+      }
+    }
+    .swiper-pagination {
+      bottom: 0 !important;
+    }
+  }
+}
+.pk-table-res{
+  td{
+    @include display-p-map($pk-table-res-display);
+    @include padding-p-map($pk-table-res-td-padding);
+  }
+}

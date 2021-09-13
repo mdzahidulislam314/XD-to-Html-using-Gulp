@@ -1,0 +1,48 @@
+//custom input
+%quantity-button {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 5px);
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: $black;
+  display: block;
+}
+.quantity {
+  .quantity-button {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin: 7px 5px;
+    &:before {
+      @extend %quantity-button;
+    }
+    &:after {
+      @extend %quantity-button;
+    }
+  }
+  .quantity-add::after {
+    transform: rotate(90deg);
+  }
+  input[type="number"] {
+    transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    box-shadow: none;
+    outline: none;
+    width: calc(100% - 80px);
+    height: 38px;
+    border: transparent;
+  }
+}
+.cus-num-input {
+  i {
+    transform: translate(0, -50%);
+    top: 50%;
+    font-style: normal;
+  }
+}

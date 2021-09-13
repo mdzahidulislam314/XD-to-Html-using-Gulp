@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.251" height="14" viewBox="0 0 15.251 14">
+  <g id="car-accident" transform="translate(0 -21)">
+    <g id="Group_1214" data-name="Group 1214" transform="translate(0 25.468)">
+      <g id="Group_1212" data-name="Group 1212" transform="translate(0 0)">
+        <path id="Path_471" data-name="Path 471" d="M3.455,172.235a2.222,2.222,0,0,0-2-1.235H.447a.447.447,0,0,0-.447.447v2.681H4.4Z" transform="translate(0 -171)"/>
+      </g>
+      <g id="Group_1213" data-name="Group 1213" transform="translate(0 4.021)">
+        <path id="Path_472" data-name="Path 472" d="M5.54,306H0v3.277a.447.447,0,0,0,.447.447h.779a2.532,2.532,0,0,1,5.054,0h.452a.447.447,0,0,0,.447-.447v-1.638A1.638,1.638,0,0,0,5.54,306Z" transform="translate(0 -306)"/>
+      </g>
+      <path id="Path_473" data-name="Path 473" d="M72.638,384.277a1.638,1.638,0,1,1,1.638-1.638A1.64,1.64,0,0,1,72.638,384.277Z" transform="translate(-68.885 -374.745)"/>
+    </g>
+    <g id="Group_1217" data-name="Group 1217" transform="translate(8.072 25.468)">
+      <g id="Group_1215" data-name="Group 1215" transform="translate(2.777 0)">
+        <path id="Path_474" data-name="Path 474" d="M365.175,172.235a2.222,2.222,0,0,1,2-1.235h1.01a.447.447,0,0,1,.447.447v2.681h-4.4Z" transform="translate(-364.229 -171)"/>
+      </g>
+      <g id="Group_1216" data-name="Group 1216" transform="translate(0 4.021)">
+        <path id="Path_475" data-name="Path 475" d="M272.638,306h5.54v3.277a.447.447,0,0,1-.447.447h-.779a2.532,2.532,0,0,0-5.054,0h-.452a.447.447,0,0,1-.447-.447v-1.638A1.638,1.638,0,0,1,272.638,306Z" transform="translate(-271 -306)"/>
+      </g>
+      <path id="Path_476" data-name="Path 476" d="M331,382.638a1.638,1.638,0,1,1,1.638,1.638A1.64,1.64,0,0,1,331,382.638Z" transform="translate(-329.213 -374.745)"/>
+    </g>
+    <path id="Path_477" data-name="Path 477" d="M171.579,27.791a.447.447,0,0,1-.431-.564l.55-2.017-1.221-.872a.447.447,0,0,1-.008-.721l3.37-2.528a.447.447,0,0,1,.7.475l-.55,2.017,1.221.872a.447.447,0,0,1,.008.721l-3.37,2.528A.446.446,0,0,1,171.579,27.791Z" transform="translate(-165.217 0)"/>
+  </g>
+</svg>

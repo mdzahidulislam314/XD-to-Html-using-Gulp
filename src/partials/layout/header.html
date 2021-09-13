@@ -1,0 +1,109 @@
+<section class="header-section">
+    <div class="alert noti-bar d-flex align-items-center rounded-0 mb-0" role="alert">
+       <div class="w-100 text-center">Your biding rights are currently limited. Please contact Lorem Ipsum</div> 
+        <span class="ml-4 cl-bar cursor-pointer" 
+        data-dismiss="alert"><img src="{{root}}assets/img/icons/close.svg" alt="img" /></span>
+    </div>
+    <div class="header-pt">
+        <ul class="nav nav-fill chart-nav black-bg d-flex d-md-none" >
+            <li class="nav-item">
+                <img class="mr-2" src="{{root}}assets/img/icons/circle-down.svg" alt="logo">
+                <span class="color-red">0</span>
+            </li>
+            <li class="nav-item">
+                <img class="mr-2" src="{{root}}assets/img/icons/circle-up.svg" alt="logo">
+                <span class="color-green">0</span>
+            </li>
+            <li class="nav-item">
+                <img class="mr-2" src="{{root}}assets/img/icons/mail.svg" alt="logo">
+                <span class="color-blue">0</span>
+            </li>
+            <li class="nav-item">
+                <img class="mr-2" src="{{root}}assets/img/icons/tick.svg" alt="logo">
+                <span class="color-white">0</span>
+            </li>
+        </ul>
+        <div class="container d-none d-md-flex align-items-center justify-content-between">
+            {{> language class="d-flex align-items-center"}}
+            <div class="module-user dp-parent d-flex align-items-center justify-content-end position-relative add-show">
+                <div class="module-user-txt border-right-g pr-4 mr-4 show-cl-btn" data-toggle="collapse" data-target="#blForm" aria-expanded="false">
+                    <span class="d-inline-flex align-items-center cursor-pointer click-ds-btn">
+                        <span><img src="{{root}}assets/img/icons/user-icon.svg" alt="img"></span>
+                    <span class="text-nowrap mx-2">Sebastian Franceris</span>
+                    <span><img src="{{root}}assets/img/icons/down.svg" alt="img"> </span>
+                    </span>
+                </div>
+                <div class="module-user-nt position-relative ">
+                    <span>
+                        <img src="{{root}}assets/img/icons/notification.svg" alt="img">
+                    </span>
+                    <span class="badge badge-pill badge-danger position-absolute count font-weight-normal">+99</span>
+                </div>
+               {{> user-dropdown id = 'blForm' class = 'custom-dropdown collapse collapse-hide p-0 m-0 rounded-0'}}
+            </div>
+        </div>
+    </div>
+    <div class="header-pm m-border-bottom-c position-relative">
+        <div class="container d-flex align-items-center">
+            <div class="w-100">
+                <a class="d-inline-flex logo-img" href="/">
+                    <img class="logo-1 mr-4" src="{{root}}assets/img/icons/logo.svg" alt="img" />
+                    <img class="logo-2" src="{{root}}assets/img/icons/logo-1.svg" alt="img" />
+                </a>
+            </div>
+            <ul class="nav m-nav nav-fill d-flex d-md-none" >
+                <li class="nav-item add-show">
+                    <span class="show-cl-btn" data-toggle="collapse" data-target="#searchDrop" aria-expanded="false">
+                        <img class="inactive-img" src="{{root}}assets/img/icons/search-b.svg" alt="img" />
+                        <img class="active-img" src="{{root}}assets/img/icons/search-y.svg" alt="img" />
+                    </span>
+                    <div class="collapse collapse-hide mobile-menu m-0 p-4 bg-white " id="searchDrop">
+                        {{> search-input}}
+                    </div>
+                </li>
+                <li class="nav-item add-show">
+                    <span class="show-cl-btn" data-toggle="collapse" data-target="#mUserDrop" aria-expanded="false">
+                        <img width="16" class="inactive-img" src="{{root}}assets/img/icons/user-icon.svg" alt="img" />
+                        <img class="active-img" src="{{root}}assets/img/icons/user-y.svg" alt="img" />
+                    </span>
+                    <div class="collapse collapse-hide mobile-menu m-0 p-0" id="mUserDrop">
+                        {{> user-dropdown id = '' class = 'custom-dropdown d-block position-static'}}
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <span class="">
+                        <img  class="inactive-img" src="{{root}}assets/img/icons/notification.svg" alt="img" />
+                        <img class="active-img" src="{{root}}assets/img/icons/notification.svg" alt="img" />
+                    </span>
+                </li>
+                <li class="nav-item add-show" >
+                    <span class="show-cl-btn" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">
+                        <img class="inactive-img" src="{{root}}assets/img/icons/menu.svg" alt="img" />
+                        <img class="active-img" src="{{root}}assets/img/icons/menu-y.svg" alt="img" />
+                    </span>
+                    <div class="collapse collapse-hide mobile-menu py-5 px-3 bg-light" id="mainMenu">
+                        <div class="m-main-menu">
+                            {{> main-menu class ='nav flex-column justify-content-center border-bottom pb-3 mb-5'}}
+                            {{> language class="d-flex mb-4 pb-3 justify-content-center"}}
+                            {{> counter}}
+                            <div class="mt-4 pt-3 text-uppercase text-center">
+                                <span  class="cursor-pointer d-inline-flex align-items-center hide-user-collapse">
+                                <img class="mr-2" src="{{root}}assets/img/icons/close-g.svg" alt="img" />close
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="d-none d-md-flex align-items-center">
+                {{> counter}}
+                {{> search-input}}
+            </div>
+        </div>
+    </div>
+    <div class="header-pb d-none d-md-block">
+        <div class="container">
+            {{> main-menu class ='nav'}}
+        </div>
+    </div>
+</section>

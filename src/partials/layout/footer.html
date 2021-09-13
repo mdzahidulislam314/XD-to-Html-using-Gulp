@@ -1,0 +1,32 @@
+<section class="footer-section">
+    <div class="container px-0">
+        {{> footer-nav  class = 'nav nav-fill nav-white d-none d-md-flex'}}
+        {{> footer-logo class = 'd-block d-md-none' navClass= 'nav logo-nav flex-column'}}
+        <div class="d-block d-md-flex align-items-center my-4 border-top border-bottom border-dark py-3 py-md-4">
+            {{> footer-logo class = 'd-none d-md-flex w-100' navClass= 'nav logo-nav'}}
+            <div class="d-flex align-items-center justify-content-center">
+                <ul class="nav nav-fill social-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-left" href="#"> <img class="" src="{{root}}assets/img/icons/facebook.svg" alt="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-left" href="#"> <img class="" src="{{root}}assets/img/icons/google.svg" alt="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-left" href="#"> <img class="" src="{{root}}assets/img/icons/youtube.svg" alt="img" /></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-left" href="#"> <img class="" src="{{root}}assets/img/icons/link.svg" alt="img" /></a>
+                    </li>
+                    <li class="nav-item mr-0">
+                        <a class="nav-link text-left" href="#"> <img class="" src="{{root}}assets/img/icons/wk.svg" alt="img" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {{> footer-nav  class = 'nav nav-fill flex-column nav-white d-flex d-md-none'}}
+        <div class="cp-text text-center pt-2 pt-md-0 mt-3 mt-md-0">
+            <span class="x-sm-text-g pt-4 pt-md-0 d-inline-block px-3">Copyright © 2009-2021 exleasingcar.com All rights reserved</span>
+        </div>
+    </div>
+</section>

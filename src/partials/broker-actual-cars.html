@@ -1,0 +1,119 @@
+<!-- broker nav bar -->
+{{> broker-nav }}
+
+<section class="broker-heading bg-white py-3 mb-4 border-bottom position-relative">
+  <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+          <div><h1 class="sm-title font-weight-bold m-0">Actual cars</h1></div>
+          <div class="broker-nav d-none d-md-block">
+              <ul class="nav h-40">
+                  <li class="nav-item font-weight-bold mr-4 mb-4 mb-md-0">
+                      <a class="nav-link text-capitalize active" href="#">All (5)</a>
+                  </li>
+                  <li class="nav-item font-weight-bold mr-4 mb-4 mb-md-0">
+                      <a class="nav-link text-capitalize" href="#"> <img class="mr-1" src="{{root}}assets/img/icons/ac.svg" alt="icon" /> (0)</a>
+                  </li>
+                  <li class="nav-item font-weight-bold mr-4 mb-4 mb-md-0">
+                      <a class="nav-link text-capitalize" href="#"> <img class="mr-1" src="{{root}}assets/img/icons/mail-b.svg" alt="logo" /> (0)</a>
+                  </li>
+                  <li class="nav-item font-weight-bold mr-4 mb-4 mb-md-0">
+                      <a class="nav-link text-capitalize" href="#"><img class="mr-1" src="{{root}}assets/img/icons/euro-sign.svg" alt="icon" /> (0)</a>
+                  </li>
+                  <li class="nav-item font-weight-bold mr-4 mb-4 mb-md-0">
+                      <a class="nav-link text-capitalize" href="#"><img class="mr-1" src="{{root}}assets/img/icons/checked.svg" alt="icon" /> Marked cars (0)</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- use for mobile -->
+          <div class="d-block d-md-none b-nav-icon">
+              <div class="icon-box icon-box1 d-flex justify-content-center w-120 font-weight-bold black-bg" data-toggle="dropdown">
+                  <div class="lbtn-2">
+                      <span class="cursor-pointer">
+                          <img class="active-img" src="{{root}}assets/img/icons/dots.svg" alt="logo" />
+                          <img class="inactive-img" src="{{root}}assets/img/icons/dot-inactive.svg" alt="logo" />
+                      </span>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-center v-sm-text ml-2 text-warning active">
+                      <span class="text-nowrap">Broker menu</span>
+                  </div>
+              </div>
+              <!-- use for mobile -->
+              <!-- use for desktop -->
+              <div class="dropdown-menu broker-nav-mobile m-0 p-4 black-bg w-100 border-0 rounded-0">
+                  <div class="broker-nav">
+                      <ul class="nav flex-column align-items-start">
+                          <li class="nav-item mr-35 mb-4 mb-md-0">
+                              <a class="nav-link text-white text-capitalize active" href="/search.html">Actual Cars (4)</a>
+                          </li>
+                          <li class="nav-item mr-35 mb-4 mb-md-0">
+                              <a class="nav-link text-white text-capitalize" href="/">Under consideration (0)</a>
+                          </li>
+                          <li class="nav-item mr-35 mb-4 mb-md-0">
+                              <a class="nav-link text-white text-capitalize" href="/broker-confirm.html">Confirmed cars (1)</a>
+                          </li>
+                          <li class="nav-item mr-35 mb-4 mb-md-0">
+                              <a class="nav-link text-white text-capitalize" href="/broker-actual-cars.html">Cancelled cars (0)</a>
+                          </li>
+                          <li class="nav-item mr-35 mb-4 mb-md-0">
+                              <a class="nav-link text-white text-capitalize" href="#">Received cars (0)</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- use for mobile -->
+<section class="d-block d-md-none my-3">
+  <div class="container">
+      <div class="d-inline-block pt-4 pt-sm-0 w-100">
+          <select class="form-control mod-select w-100">
+              <option selected=""> (0)</option>
+              <option style="background-image:url({{root}}assets/img/icons/ac.svg);">Oldest</option>
+          </select>
+      </div>
+  </div>
+</section>
+<!-- use for mobile -->
+
+<section class="act-car-list mb-5">
+    <div class="container">
+        <div class="sm-title mb-3 font-weight-bold">Today</div>
+        <div class="row mod-row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-one}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-one}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-package-card-one}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-two}}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="act-car-list mt-2 mb-5">
+    <div class="container">
+        <div class="sm-title mb-3 font-weight-bold">2021-03-29</div>
+        <div class="row mod-row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-three}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-package-card-two}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-one}}
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mod-col mb-4">
+                {{> actual-car-card-one}}
+            </div>
+        </div>
+    </div>
+</section>

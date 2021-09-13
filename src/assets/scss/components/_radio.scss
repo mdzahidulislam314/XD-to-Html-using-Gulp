@@ -1,0 +1,14 @@
+[type="radio"] {
+  &:checked {
+    + {
+      label {
+        &:before {
+          border: 1px solid #fed000;
+        }
+        &:after {
+          background: #fed000;
+        }
+      }
+    }
+  }
+}

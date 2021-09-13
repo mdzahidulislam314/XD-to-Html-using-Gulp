@@ -1,0 +1,25 @@
+.cus-tabs-module {
+  .nav-tabs {
+    .nav-link {
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: #747474;
+    }
+    .nav-item {
+      &.show {
+        .nav-link {
+          color: #495057;
+          background-color: #fff;
+          border-color: $color1 !important;
+        }
+      }
+    }
+    .nav-link {
+      &.active {
+        color: #12100b;
+        background: none;
+        border-color: $color1 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.icon-box-cnt {
+    .mod-row {
+        /*@include width-p-map($icon-box-mod-row-width);*/
+    }
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 151px;
+}
+
+.icon-box1 {
+    background: $color4;
+    border: 1px solid $color6;
+}
+
+.icon-box2 {
+    background: $color1;
+    span {
+        margin: 0 10px;
+    }
+}
+
+.icon-box3 {
+    background: $cm-color;
+    color: $white;
+}
+
+.search-module {
+    background: $white;
+    .icon-box-cnt {
+        padding-bottom: 20px;
+    }
+}
+
+.mod-row {
+    margin-left: -5px;
+    margin-right: -5px;
+    .mod-col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.checkbox-item-all {
+    padding: 10px 0;
+    .checkbox-item {
+        background: $color4;
+        .checkbox-left {
+            padding: 0 10px;
+        }
+        .checkbox-right {
+            background: $color14;
+            padding: 15px;
+        }
+    }
+}
+
+
+.module-result-box {
+    padding: 13px 15px;
+    background: $color4;
+}
+
+.mod-select {
+    width: 192px;
+}
+
+.form-c-btn {
+    &.show {
+        .du-icon {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.u-ic-f,
+.d-ic-f {
+    position: absolute;
+    right: 15px;
+}
+
+.u-ic-f {
+    top: 15px;
+}
+
+.d-ic-f {
+    bottom: 15px;
+}
+.model-item {
+  display: none;
+}
+.mm-item-srl {
+    max-height: 310px;
+    overflow-y: auto;
+}
+.mm-row {
+    @include height-p-map($mm-row-height);
+}

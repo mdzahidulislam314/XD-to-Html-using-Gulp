@@ -1,0 +1,63 @@
+<!-- broker nav bar -->
+{{> broker-nav }}
+
+<section class="broker-heading py-4 position-relative bg-white-m mb-4 mb-md-0">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <div><h1 class="sm-title font-weight-bold m-0">Confirmed cars</h1></div>
+      <!-- use for mobile -->
+      {{> broker-mobile-nav }}
+    </div>
+  </div>
+</section>
+
+<section class="mb-5 confirm-car">
+  <div class="container">
+    <div class="card b-car-list">
+      <div
+        class="
+          card-header
+          black-bg
+          text-white
+          b-car-head
+          d-none d-md-block
+          font-size-12
+        "
+      >
+        <div class="row mod-row font-size-10">
+          <div class="col-md-3 mod-col my-auto">
+            <span>Vehicle</span>
+          </div>
+          <div class="col-md-9 mod-col">
+            <div class="row align-items-center">
+              <div class="col-12 col-d8">Winning date</div>
+              <div class="col-12 col-d8">Amount,Paid, Debt (€)</div>
+              <div class="col-12 col-d8">
+                <span class="text-nowrap d-inline-block pl-3">Transportation</span>
+              </div>
+              <div class="col-12 col-d8">
+                <span class="pl-2 d-inline-block ">Technical passport</span>
+              </div>
+              <div class="col-12 col-d8">Service order</div>
+              <div class="col-12 col-d8">Clearance data</div>
+              <div class="col-12 col-d8">Available for pick up</div>
+              <div class="col-12 col-d8">Withdrawal</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body px-0 px-md-3 pt-0 pt-1 pb-0 pb-md-3 b-car-data">
+
+        <!-- single list -->
+        {{> confirm-car-list-one}}
+
+        <!-- single list -->
+        {{> confirm-car-list-two}}
+        
+        <!-- single list -->
+        {{> confirm-car-list-one}}
+       
+      </div>
+    </div>
+  </div>
+</section>

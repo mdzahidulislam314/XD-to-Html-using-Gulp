@@ -1,0 +1,76 @@
+
+  <div class="bg-white">
+    <div class="container pt-3">
+       {{> latest-search title ='Auctions'}}
+    </div>
+</div>
+{{> search-form formVisble ='' filterBtnText = "Expand filter"}}
+<div class="module-body pt-3 mt-1 mb-5">
+    <div class="container">
+        {{> banner}}
+        <div class="mb-4 pb-3">
+            <div class="row module-pkg mx-0 rounded  border-v bg-white">
+            <div class="col-12 col-lg-3 module-pkg-left bg-violet d-flex align-items-center justify-content-lg-center">
+                <span class="md-text"><img class="mr-4" src="{{root}}assets/img/icons/two-cars.svg" alt="logo">  Packages</span>
+            </div>
+            <div class=" col-12 col-lg-9 module-pkg-right">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div class="row align-items-center mb-3 mb-md-0">
+                        <div class="col-3 d-flex align-items-center">
+                            <img class="mr-2" src="{{root}}assets/img/icons/Reno.svg" alt="logo">1
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <img class="mr-2" src="{{root}}assets/img/icons/BMW.svg" alt="logo">7
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <img class="mr-2" src="{{root}}assets/img/icons/Opel.svg" alt="logo">2
+                        </div>
+                        <div class="col-3 d-flex align-items-center">
+                            <span class="mr-2">Other:</span>
+                            <span class="">3</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn ctm-btn violet-btn  text-uppercase">SEE ALL AUCTIONS (5)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="ac-list-all">
+            <div class="mb-2 pb-1 md-text">
+                <span class="">At the time</span> <span class="color-gray ml-2">(in about 30 minutes)</span>
+            </div>
+
+            <!--less plan item -->
+            {{> auction-item class = 'less-item'}}
+            <!-- orginal-item -->
+            {{> auction-item class = 'orginal-item'}}
+
+            <div class="mb-2 pb-1 md-text mt-4 pt-2">
+                In 2 hours
+            </div>
+                <!--less plan item -->
+                {{> auction-item class = 'less-item'}}
+                <!-- orginal-item -->
+                {{> auction-item class = 'orginal-item'}}
+            <nav class="mt-4 pt-3">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1"><img src="{{root}}assets/img/icons/left.svg" alt="logo"></a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><img src="{{root}}assets/img/icons/right.svg" alt="logo"></a>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </div>
+</div>

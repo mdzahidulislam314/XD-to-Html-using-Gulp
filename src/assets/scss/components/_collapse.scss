@@ -1,0 +1,31 @@
+.cus-collapse {
+  .card {
+    margin-bottom: 30px;
+    .card-header {
+      .btn-header-link {
+        color: $cm-color;
+        &:after {
+          content: "\f078";
+          font-family: 'Font Awesome 5 Pro';
+          float: right;
+          font-size: 14px;
+        }
+      }
+      .btn-header-link.collapsed {
+        background: $color4;
+        &:after {
+          content: "\f054";
+        }
+      }
+    }
+    .collapsing {
+      background: #FFE472;
+      line-height: 30px;
+    }
+    .collapse.show {
+      background: #FFE472;
+      line-height: 30px;
+      color: $cm-color;
+    }
+  }
+}

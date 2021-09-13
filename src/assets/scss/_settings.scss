@@ -1,0 +1,23 @@
+@import '_mixins';
+@font-face {
+  font-family: Proxima Nova;
+  src: url('./../fonts/Proxima Nova Font.otf');
+  font-style: normal;
+}
+body { 
+  font-size: 14px;
+  background: $body-bg-color;
+  color: $cm-color;
+  font-family: $font-nova;
+  font-weight: 400;
+  line-height: normal;
+}
+.main-wrapper {
+  /*background: $black-bg;*/
+  /*max-width: 1280px;*/
+  /*margin: auto;*/
+}
+.module-max-cnt {
+  max-width: 950px;
+  margin: auto;
+}

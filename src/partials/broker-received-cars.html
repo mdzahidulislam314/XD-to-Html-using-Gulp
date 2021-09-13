@@ -1,0 +1,45 @@
+ <!-- broker nav -->
+{{> broker-nav }}
+
+<section class="broker-heading py-4 position-relative bg-white-m mb-4 mb-md-0">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <div><h1 class="sm-title font-weight-bold m-0">Received cars</h1></div>
+            <!-- use for mobile -->
+            {{> broker-mobile-nav }}
+        </div>
+    </div>
+</section>
+
+<!-- filter -->
+{{> broker-filter  }}
+
+ <section class="mb-5">
+     <div class="container b-carlist-moduel">
+         <div class="card b-car-list">
+             <div class="card-header black-bg text-white b-car-head d-none d-md-block px-3">
+                 <div class="row mod-row">
+                     <div class="col-md-4 mod-col my-auto">
+                         <span>Transporto priemonė</span>
+                     </div>
+                     <div class="col-md-8 mod-col">
+                         <div class="row mod-row align-items-center">
+                             <div class="col-12 col-md-3 mod-col">Atsiėmimo data</div>
+                             <div class="col-12 col-md-3 mod-col">Pirkimo data</div>
+                             <div class="col-12 col-md-3 mod-col">Kainos pasiūlymas</div>
+                             <div class="col-12 col-md-3 mod-col">Type</div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="card-body p-0 p-md-3 b-car-data">
+                 <!-- single list -->
+                 {{> receive-car-item-one}}
+                 <!-- single list -->
+                 {{> receive-car-item-two}}
+                 <!-- single list -->
+                 {{> receive-car-item-one}}
+             </div>
+         </div>
+     </div>
+ </section>

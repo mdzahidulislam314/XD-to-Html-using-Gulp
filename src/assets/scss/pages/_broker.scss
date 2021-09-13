@@ -1,0 +1,102 @@
+// broker nav
+.broker-nav {
+  .nav {
+    .nav-item {
+      @include margin-right-p-map($header-nav-item-margin-right);
+      .nav-link {
+        &.active {
+          color: $color1 !important;
+        }
+      }
+    }
+  }
+}
+.broker-nav-mobile {
+  top: 90px !important;
+  transform: unset !important;
+}
+.col-d8 {
+  @include max-width-p-map($col-d8-max-width);
+  @include flex-p-map($col-d8-flex);
+  @include font-size-p-map($col-d8-font-size);
+}
+.col-d5 {
+  @include max-width-p-map($col-d5-max-width);
+  @include flex-p-map($col-d5-flex);
+}
+.list-item {
+  &:last-child {
+    .border-bottom {
+      border-bottom: none !important;
+    }
+  }
+}
+.active-br-i {
+  display: none;
+}
+.broker-btn {
+  &.btn-secondary {
+    .active-br-i {
+      display: inline-block;
+    }
+    .inactive-br-i {
+      display: none;
+    }
+  }
+}
+.broker-heading {
+  .b-nav-icon {
+    &.show {
+      .active {
+        color: $black-bg !important;
+      }
+      .icon-box1 {
+        background: $color1 !important;
+      }
+      .active-img {
+        display: inline-block;
+      }
+      .inactive-img {
+        display: none;
+      }
+    }
+  }
+}
+/* End */
+
+/* confirm car */
+.b-car-list {
+  @include border-p-map($b-car-list-border);
+  @include background-p-map($b-car-list-bg);
+}
+.confirm-car{
+  .b-car-th,
+  .b-car-dt {
+    @include font-size-map($b-car-th-font-size);
+  }
+}
+
+.b-car-data {
+  hr {
+    &:last-child {
+      border: none;
+    }
+  }
+  .pk-item {
+    width: 76%;
+  }
+  .b-mcar-info {
+    display: none;
+  }
+}
+/* End */
+
+/*  Cancelled cars */
+.b-carlist-moduel {
+  .b-car-dt {
+    width: 25%;
+    margin-right: 10px;
+  }
+}
+
+/* End */
